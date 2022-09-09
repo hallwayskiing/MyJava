@@ -3,7 +3,7 @@ public class ShowInfo {
         System.out.println("Name:聂宇翔\n" +
                            "Sex:Male\n" +
                            "Home:Nanchang\n" +
-                           "Address:C4111"
+                           "Address:C411111111111"
         );
     }
 }
