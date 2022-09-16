@@ -1,4 +1,4 @@
-public class Multipleof7 {
+public class Multiplesof7 {
     public static void main(String[] args) {
         int sum=0;
         int num=0;
