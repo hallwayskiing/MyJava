@@ -1,3 +1,5 @@
+package Chapter_3;
+
 public class MultiplesofSeven {
     public static void main(String[] args) {
         int sum=0;

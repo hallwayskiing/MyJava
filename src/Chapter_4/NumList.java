@@ -1,3 +1,5 @@
+package Chapter_4;
+
 public class NumList {
     public int[]nums;
     public static void main(String[] args) {
@@ -6,7 +8,7 @@ public class NumList {
 
         myList.sortList();
 
-        myList.insertNumber(1000);
+        myList.insertNumber(33);
 
         for (int num : myList.nums)
             System.out.println(num);

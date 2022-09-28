@@ -1,3 +1,5 @@
+package Chapter_4;
+
 public class YangHuiTriangle {
     static int outputLineNum=10;//输出杨辉三角形的行数
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package Chapter_1;
+
 public class ShowInfo {
     public static void main(String[] args) {
         System.out.println("Name:聂宇翔\n" +
