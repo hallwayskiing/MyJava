@@ -4,16 +4,18 @@ import java.util.Stack;
 
 public class ReverseString {
     public static boolean isReverseString(String s) {
-        Stack<Character> st = new Stack<>();
+        Stack<Character> reversed = new Stack<>();
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            st.push(ch);
+            reversed.push(ch);
         }
+
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-            if (!st.pop().equals(ch))
+            if (!reversed.pop().equals(ch))
                 return false;
         }
+
         return true;
     }
 
