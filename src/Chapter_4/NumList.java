@@ -1,7 +1,10 @@
 package Chapter_4;
 
+import java.util.Arrays;
+
 public class NumList {
     public int[]nums;
+
     public static void main(String[] args) {
         NumList myList=new NumList();
         myList.nums=new int[]{44,25,83,32,4,57,62,18,96,72};
@@ -16,27 +19,22 @@ public class NumList {
 
     public void insertNumber(int number)
     {
-        int []oldNums=nums.clone();
-        nums=new int[nums.length+1];
-        boolean isFirst=true;
+        int []oldNums=nums.clone();//复制原数组
 
-        for (int i=0,j=0;i< oldNums.length;i++,j++)
-        {
-            if(number<=oldNums[i]&&isFirst)
-            {
-                nums[j]=number;
-                j++;
-                isFirst=false;
-            }
-            nums[j]=oldNums[i];
-        }
+        nums=new int[oldNums.length+1];//创建长度+1的新数组
 
-        if(isFirst)
-            nums[nums.length-1]=number;
+        //拷贝数据
+        for(int i=0;i<oldNums.length;i++)
+            nums[i]=oldNums[i];
+
+        nums[nums.length-1]=number;//添加新数据
+
+        sortList();//添加后再排序
     }
 
     public void sortList()
     {
+        //冒泡排序
         for(int i=0;i< nums.length;i++)
             for(int j=i+1;j< nums.length;j++)
             {

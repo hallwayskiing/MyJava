@@ -10,18 +10,19 @@ public class CountPrimes3 {
         System.out.print("Input a number:");
         int n = input.nextInt();
         if (n <= 2) {
-            System.out.println("Not a primie");
+            System.out.println("Not a prime");
             return;
-        } else {
+        }
+        else {
             for (int i = 2; i < n; i++) {
-                boolean flag = true;
+                boolean isPrime = true;
                 for (int j : res) {
                     if (i % j == 0) {
-                        flag = false;
+                        isPrime = false;
                         break;
                     }
                 }
-                if (flag) {
+                if (isPrime) {
                     res.add(i);
                     System.out.print(i + " ");
                 }

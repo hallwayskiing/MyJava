@@ -1,6 +1,6 @@
 package Chapter_3;
 
-public class SumofOddNumber {
+public class SumOfOddNumber {
 
     public static void main(String[] args) {
         int sum=0;

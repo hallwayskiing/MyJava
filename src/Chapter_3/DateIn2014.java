@@ -1,10 +1,10 @@
 package Chapter_3;
 
 public class DateIn2014 {
-    public static void getDateIn2014(int month,int day) {
+    public static int getDateIn2014(int month,int day) {
         if (month < 1 || month > 12 || day < 1 || day > 31) {
             System.out.println("Wrong Input");
-            return;
+            return -1;
         }
 
         int date = 0;
@@ -31,12 +31,12 @@ public class DateIn2014 {
             }
         }
             date += day;
-            System.out.println("It's the No." + date + " day in 2014");
+            return date;
 
     }
 
     public static void main(String[] args) {
-        int month=20,day=3;
-        getDateIn2014(month,day);
+        int month=4,day=3;
+        System.out.println("It's the No." + getDateIn2014(month,day) + " day in 2014");
     }
 }

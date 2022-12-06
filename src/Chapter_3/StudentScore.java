@@ -9,11 +9,13 @@ public class StudentScore {
 
     public static void main(String[] args) {
         StudentScore student_a = new StudentScore(44);
-        student_a.showResult();
+        System.out.println(student_a.getExamResult());
     }
 
-    void showResult() {
-        if (score < 60) System.out.println("不合格");
-        else System.out.println("合格");
+    String getExamResult() {
+        if (score < 60) return "不合格";
+        else return "合格";
     }
+
+
 }
