@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class HexToDec {
     static int hexToDec(String hex) {
         int dec = 0;
-        int times = 1;//位数
+        int times = 1;//代表当前位数，从个位起
 
         //从后向前遍历十六进制字符串
         for (int i = hex.length() - 1; i >= 0; i--) {
